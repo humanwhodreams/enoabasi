@@ -1,4 +1,4 @@
-# enoabasi.xyz
+# enoabasi
 
 Personal website and blog. 
 
