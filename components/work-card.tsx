@@ -18,7 +18,7 @@ interface Props {
 
 export function WorkCard({ position, office, duration, roles }: Props) {
   return (
-    <Card className="border-none shadow-none">
+    <Card className="border-none shadow-none bg-transparent">
       <CardHeader className="p-0 md:p-2">
         <CardTitle>{position}</CardTitle>
         <CardDescription>
