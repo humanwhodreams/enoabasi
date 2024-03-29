@@ -16,7 +16,6 @@ export async function WritingsFeed() {
               <WritingCard
                 slug={writing.slug}
                 title={writing.title}
-                description={writing.description}
                 date={writing.date}
               />
             </li>
