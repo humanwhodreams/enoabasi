@@ -18,9 +18,9 @@
 
     --secondary: 240 4.8% 95.9%;
     --secondary-foreground: 240 5.9% 10%;
-
+    
     --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 46.1%;
+    --muted-foreground:  240 3.8% 46.1%;
 
     --accent: 240 4.8% 95.9%;
     --accent-foreground: 240 5.9% 10%;
@@ -90,6 +90,9 @@
   }
   blockquote {
     @apply mt-6 border-l-2 pl-6 italic;
+  }
+  .large {
+    @apply text-lg font-semibold
   }
   .muted {
     @apply text-sm text-muted-foreground;
