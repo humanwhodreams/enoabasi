@@ -4,23 +4,27 @@ import type { Writing } from "@velite/content";
 import { cn } from "@/lib/utils";
 import { formatDate } from "@/utils/fns";
 
-interface Props extends Omit<Writing, "published" | "slugAsParams" | "body"> {}
+interface Props
+  extends Omit<
+    Writing,
+    "description" | "published" | "slugAsParams" | "body"
+  > {}
 
-export function WritingCard({ slug, title, description, date }: Props) {
+export function WritingCard({ slug, title, date }: Props) {
   return (
     <Link
-      target="_blank"
       href={slug}
-      rel="noopener noreferrer"
       className={cn(
-        "flex items-center justify-between w-full hover:bg-green-50 dark:hover:bg-muted rounded-md p-3 text-muted-foreground hover:text-primary"
+        "flex items-center justify-between w-full hover:bg-green-50 dark:hover:bg-muted rounded-md p-2 md:p-3 text-muted-foreground hover:text-primary"
       )}
     >
-      <span className="font-medium">{title}</span>
-      <span className="flex items-center">
-        <Calendar className="mr-2 size-4" />
-        {formatDate(date)}
-      </span>
+      <span className="font-medium truncate">{title}</span>
+      <div className="flex justify-end">
+        <span className="flex items-center ml-4 whitespace-nowrap w-fit">
+          <Calendar className="hidden mr-2 size-4 sm:block" />
+          {formatDate(date)}
+        </span>
+      </div>
     </Link>
   );
 }
