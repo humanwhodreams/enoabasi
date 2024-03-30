@@ -1,5 +1,7 @@
 import { ProjectCard } from "@/components/project-card";
+import { Suspense } from "react";
 import { WorkCard } from "@/components/work-card";
+import { WritingsFeed } from "@/components/writings-feed";
 import { cn } from "@/lib/utils";
 import { ppEditorialNew } from "../fonts-local";
 import { projects } from "@/constants/projects";
@@ -70,6 +72,9 @@ export default function Home() {
         >
           Writings
         </h2>
+        <Suspense fallback={<p>loading writes...</p>}>
+          <WritingsFeed />
+        </Suspense>
       </section>
     </>
   );
