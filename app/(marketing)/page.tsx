@@ -90,7 +90,7 @@ export default function Home() {
         >
           Connect with me
         </h2>
-        <ul className="flex items-center mt-4">
+        <ul className="flex flex-col items-start mt-4 md:flex-row md:items-center">
           {me.socials.map((social) => (
             <li key={social.name}>
               <a
