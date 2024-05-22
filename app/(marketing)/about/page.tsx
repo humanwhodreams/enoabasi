@@ -56,7 +56,6 @@ export default function About() {
           ))}
         </ul>
       </section>
-      <section></section>
     </>
   );
 }
