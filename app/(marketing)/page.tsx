@@ -11,10 +11,10 @@ export default function Home() {
       <section>
         <div>
           <h1 className={cn(ppEditorialNew.className)}>
-            Welcome to my personal website.
+            Welcome to my website.
           </h1>
           <p>
-            Personal website and blog of{" "}
+            Personal website and portfolio of{" "}
             <a
               href={"https://twitter.com/from_enoabasi"}
               target="_blank"
@@ -23,7 +23,7 @@ export default function Home() {
             >
               <strong>Enoabasi</strong>
             </a>
-            , Software Developer &amp; hobbist Game developer.
+            , Software Developer &amp; hobbyist Game developer.
           </p>
 
           <div>
@@ -47,10 +47,10 @@ export default function Home() {
         ))}
       </section>
 
-      <section id="projects" className="mt-12 space-y-6 md:mt-20">
+      <section id="projects" className="my-12 space-y-6 md:my-20">
         <h2
           className={cn(
-            "text-lg tracking-wide font-normal",
+            "tracking-wide",
             ppEditorialNew.className
           )}
         >
@@ -59,17 +59,6 @@ export default function Home() {
         {projects.map((project, i) => (
           <ProjectCard key={i} project={project} />
         ))}
-      </section>
-
-      <section id="writings" className="mt-12 space-y-6 md:mt-20">
-        <h2
-          className={cn(
-            "text-lg tracking-wide font-normal",
-            ppEditorialNew.className
-          )}
-        >
-          Writings
-        </h2>
       </section>
     </>
   );

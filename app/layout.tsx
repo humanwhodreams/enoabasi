@@ -9,8 +9,8 @@ import { cn } from "@/lib/utils";
 import { inter } from "./fonts";
 
 export const metadata: Metadata = {
-  title: "Enoabasi | Software Engineering Portfolio.",
-  description: "Perosnal website and blog of Enoabasi, Software Engineer.",
+  title: "Enoabasi Essien | Software Developer Portfolio.",
+  description: "Perosnal website & portfolio of Enoabasi Essien, Software Developer.",
 };
 
 export default function RootLayout({

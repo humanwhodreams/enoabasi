@@ -6,28 +6,26 @@ export type Projects = {
   year: string;
 };
 
-const sourceControl = "https://github.com";
-
 export const projects: Projects[] = [
   {
-    title: "Qrbuzz",
-    description: "Generate qr codes for anything",
-    source: `${sourceControl}/qrbuzz`,
-    live: "https://qrbuzz.vercel.app",
-    year: "2023",
+    title: "QrBuzz",
+    description: "Quickly generate QR codes for your desired media super fast.",
+    source: "https://github.com/fromenoabasi/qrbuzz",
+    live: "https://qrbuzz.vercel.app/",
+    year: "2024",
   },
   {
-    title: "Planscape",
-    description: "A simple todo planner",
-    source: `${sourceControl}/planscape`,
-    live: "https://planscape.vercel.app",
-    year: "2023",
+    title: "Lstools",
+    description: "Productivity tooling for focusing on tasks and more.",
+    source: "https://github.com/fromenoabasi/lst",
+    live: "https://lstools.vercel.app/",
+    year: "2024",
   },
   {
     title: "Recallify",
-    description: "Memory enhancement app for early stage traumatic injury",
-    source: `${sourceControl}/recallify`,
-    live: "https://recallify.vercel.app",
+    description: "productivity application for early stage traumatic brain injury.",
+    source: "https://bilalkobattay1212.wixsite.com/recallify",
+    live: "#",
     year: "2022",
   },
 ];
