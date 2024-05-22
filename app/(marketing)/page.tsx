@@ -1,6 +1,12 @@
+import { ArrowUpRight, AtSign } from "lucide-react";
+
 import { ProjectCard } from "@/components/project-card";
+import { Suspense } from "react";
 import { WorkCard } from "@/components/work-card";
+import { WritingsFeed } from "@/components/writings-feed";
+import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { me } from "@/constants/me";
 import { ppEditorialNew } from "../fonts-local";
 import { projects } from "@/constants/projects";
 import { works } from "@/constants/works";

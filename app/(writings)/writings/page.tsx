@@ -6,7 +6,7 @@ import { ppEditorialNew } from "@/app/fonts-local";
 export default function Writings() {
   return (
     <>
-      <section>
+      <section className="mt-12 md:mt-24">
         <div>
           <h1 className={cn(ppEditorialNew.className)}>
             Welcome to my <span className="italic font-light">wiritings</span>.
@@ -19,7 +19,7 @@ export default function Writings() {
         </div>
       </section>
 
-      <section id="all-posts" className="mt-12">
+      <section id="all" className="mt-12">
         <Suspense fallback={<p>loading writes...</p>}>
           <WritingsFeed />
         </Suspense>
